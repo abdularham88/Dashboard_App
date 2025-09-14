@@ -1,64 +1,12 @@
-# CNAPP Dashboard (React + Zustand + Tailwind + Recharts)
+# React + Vite
 
-This project is a **Frontend Assignment** built using **React, Vite, Zustand, TailwindCSS, and Recharts**.  
-It is a dynamic dashboard where users can add, remove, and manage different types of widgets such as:
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-- 📊 Doughnut Charts (for cloud account status, risk assessment, etc.)
-- 📦 Empty Widgets (placeholders with "No Graph Data Available")
-- 📈 Progress Widgets (for vulnerabilities and image security issues)
-- 📝 Text Widgets (simple informational widgets)
+Currently, two official plugins are available:
 
----
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## 🚀 Features
+## Expanding the ESLint configuration
 
-✅ **Dynamic Categories** — CSPM Executive Dashboard, CWPP Dashboard, Registry Scan  
-✅ **Add / Remove Widgets** — Add widgets dynamically to each category  
-✅ **Widget Types** — Chart, Empty, Progress, and Text  
-✅ **Doughnut Chart Support** using [Recharts](https://recharts.org/)  
-✅ **State Management** with [Zustand](https://zustand-demo.pmnd.rs/)  
-✅ **Responsive UI** with [TailwindCSS](https://tailwindcss.com/)  
-✅ **Deployable on GitHub Pages**  
-
----
-
-## 📂 Project Structure
-
-src/
-├─ components/
-│ ├─ Dashboard.jsx
-│ ├─ Category.jsx
-│ ├─ Widget.jsx
-│ ├─ ChartWidget.jsx
-│ ├─ ProgressWidget.jsx
-│ ├─ EmptyWidget.jsx
-│ └─ AddWidgetModal.jsx
-│
-├─ store/
-│ └─ useDashboard.js
-│
-├─ App.jsx
-└─ main.jsx
-
-
----
-
-## ⚙️ Installation & Running Locally
-
-1. Clone this repo:
-   ```bash
-   git clone https://github.com/YOUR-USERNAME/dashboard-app.git
-   cd dashboard-app
-
-## Install Dependencies
-
-npm install
-
-## Start Development server
-
-npm run dev
-
-## Open App on Browser
-
-http://localhost:5173/
-
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
